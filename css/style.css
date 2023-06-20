@@ -1,0 +1,229 @@
+    /* de cero */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+    a:hover{
+        cursor: pointer;
+        }
+    
+        /* HEADER (index) */
+    .itemsNavBar{
+        display: flex;
+        flex-flow: wrap row;
+        background-color: black;
+        height: 70px;
+        width: 100%;
+        padding-top: 18px;
+        justify-content: center;
+        gap: 30px;
+        }
+    
+    .itemsNavBar li{
+        list-style: none;
+        }
+    
+    .itemsNavBar li a{
+        font-size: 40px;
+        font-style: italic;
+        text-decoration-line: none;
+        text-decoration: none;
+        color: white;
+        }
+    
+        .navBar div img{
+        position: fixed;
+        width: 6%;
+        height: 70px;  
+        left: 94%;
+        }
+    
+    .h1{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        height: 450px;
+        width: 100%;
+        background-image: url("../assets/img/fondo-h1-_2_.png");
+        }
+    
+    .h1 h1{
+        align-self: center;
+        font-size: 800%;
+        font-style: italic;
+        color: rgb(29, 247, 247) ;
+        text-transform: capitalize;
+        text-shadow: 4px 4px 3px rgb(2, 113, 121);
+        }
+    
+        /* MAIN (index) */ 
+    
+    main{
+        background-color: rgb(221, 221, 221);
+        }
+    
+    .h2{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        }
+    
+    .h2 h2{
+        font-size: 60px;
+        padding: 30px;
+        padding-bottom: 50px;
+        }
+    
+    .zapatillas{
+        display: flex;
+        flex-flow: wrap;
+        gap: 70px;
+        justify-content: center;
+        }
+    
+    .zapatillas div a img{
+        display: block;
+        width: 350px;
+        height: 350px;
+        }    
+    
+    .imgDescription{
+        background-color: white;
+        height: 50px;
+        width: 350px;
+        font-size: 20px;
+        text-align: center;
+        display: inline-block;
+        color: black;
+        background-color: white;
+    }
+    
+    
+    .priceTag{
+        text-decoration: none;
+        }
+    
+    .imgPrice{
+        text-align: center;
+        font-size: 22px;
+            min-width: 130px;
+            height: 40px;
+            color: rgb(255, 255, 255);
+            padding: 5px 10px;
+            transition: all 0,4s ease;
+            position: relative;
+            outline: none;
+            border-radius: 5px;
+            border: none;
+            box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+            background: #000000;
+            z-index: 1;
+        }
+        
+    .imgPrice:hover:after {
+            width: 100%;
+            left: 0;
+        }
+    
+    .imgPrice:after {
+            border-radius: 5px;
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 100%;
+            top: 0;
+            z-index: -1;
+            transition: all 0.3s ease;
+            background-color: #a8a8a8;
+            right: 0;
+        }
+    
+    .imgPrice:active {
+            top: 2px;
+        }
+    
+        /* FOOTER (index)*/
+    
+    .footer{
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: center;
+        gap: 30px;
+        background-color: black;
+        height: 40px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        }   
+    
+    .footer p{
+        color: #343a40;
+        font-size: 25px;
+        align-self: center;
+        }
+    
+    .footer a{
+        align-self: center;
+        align-items: flex-end;
+        }
+    
+    .footer a img{
+        width: 30px;
+        height: 30px;
+        }
+
+        
+            /* MAIN (tienda) */
+    
+            .h3{
+                display: flex;
+                margin-left: 200px;
+                font-size: 40px;
+            }
+            
+        
+        
+        /* MAIN (dscuentos) */
+        
+        .descuentoCross{
+            text-decoration: line-through;
+            color: white;
+        }
+        
+        .descuento{
+            color: white;
+        }
+        
+        
+            /* MAIN (novedades) */
+        
+            .mainNovedades{
+                background-color: white;
+            }
+        
+        
+            .textoNovedades {
+            background-color: white;
+            padding: 20px 10% 20px 10%;
+        }
+        
+            .textoNovedades h2{
+            font-size: 30px;
+            text-align: center;
+        }
+        
+            .mail{
+            padding-left: 40%;
+            }
+        
+            .enviar{
+                padding-left: 45%;
+            }
+        
+        
+            /* MAIN (contacto) */
+            
+            .mainContacto{
+                background-color: white;
+            }
