@@ -4,11 +4,34 @@ function busqueda(){
     let encontrado = productos.find(p=> p.nombre === nombre);
 
     if (encontrado){
-        alert ("Producto encontrado, buscar en tienda");
-    }else{
-        alert("producto no encontrado, buscar otro modelo");
+        Swal.fire({
+            title: 'Hay stock!',
+            width: 600,
+            padding: '3em',
+            color: '#716add',
+            background: '#fff url(/images/trees.png)',
+            backdrop: `
+            rgba(0,0,123,0.4)
+            url("/images/nyan-cat.gif")
+            left top
+            no-repeat`,
+        });
+        }else{
+            Swal.fire({
+                title: 'No hay stock :(',
+                width: 600,
+                padding: '3em',
+                color: '#716add',
+                background: '#fff url(/images/trees.png)',
+                backdrop: `
+                rgba(0,0,123,0.4)
+                url("/images/nyan-cat.gif")
+                left top
+                no-repeat`,
+            });
     }
 }
+
 let boton = document.getElementById("boton");
 const botonBusqueda = () => {
     busqueda();
